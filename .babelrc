@@ -1,0 +1,30 @@
+{
+    "presets": [
+        ["env", {
+            "modules": false,
+            "targets": {
+                "chrome": 52,
+                "browsers": ["last 3 versions", "safari >= 7"]
+            }
+        }],
+        "react",
+        "stage-2"
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                "react-hot-loader/babel"
+            ]
+        },
+        "production": {
+            "presets": [
+                "react-optimize"
+            ]
+        },
+        "test": {
+            "plugins": [
+                "transform-es2015-modules-commonjs"
+            ]
+        }
+    }
+}
